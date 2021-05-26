@@ -1,0 +1,25 @@
+// .card-container{
+//     transform: scale3d(1,1, 1);
+//     position:relative;
+// }
+.card-container{
+	padding: 20px;
+	transition: all 500ms ease;
+	overflow: hidden;
+
+	img {
+		transform: scale(1);
+		transition: transform 500ms ease;
+	}
+
+	&:hover {
+		transition: all 500ms ease;
+		padding: 10px;
+		
+		img{
+			transition: transform 500ms ease;
+			transform: scale(1.2);
+		}
+	
+	}
+}
